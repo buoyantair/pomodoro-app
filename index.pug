@@ -1,0 +1,30 @@
+html
+    head
+        title Pomodoro App!
+        link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css")
+        link(rel="stylesheet" type="text/css" href="css/reset.css")
+        link(rel="stylesheet" type="text/css" href="css/style.css")
+        link(href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet")
+    body
+        .control
+            div.ion-ios-navigate-outline#trigger
+            div#settings
+                div.note CLICK THE ICON TO START/END!
+                h1 POMODORO
+                input(type="number" placeholder="Session Time")#sessiontime
+                h2 MINUTES
+                input(type="number" placeholder="Break Time")#breaktime
+                h2 MINUTES
+        .static
+            .land
+                h1#stime
+                h1#btime
+                p Click the Gear to the top left to change settings
+            .progress
+                .mask#prog
+            #notification
+                i.ion-ios-alarm-outline
+                h1 Hold on!
+                p Did you set the session & break information?
+                div.ion-ios-close-empty.close#n-close
+        script(src="script.js")

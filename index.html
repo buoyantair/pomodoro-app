@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Pomodoro App!</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="control">
+        <div class="ion-ios-navigate-outline" id="trigger"></div>
+        <div id="settings">
+            <div class="note">CLICK THE ICON TO START/END!</div>
+            <h1>POMODORO</h1><input type="number" placeholder="Session Time" id="sessiontime" />
+            <h2>MINUTES</h2><input type="number" placeholder="Break Time" id="breaktime" />
+            <h2>MINUTES</h2></div>
+    </div>
+    <div class="static">
+        <div class="land">
+            <h1 id="stime"></h1>
+            <h1 id="btime"></h1>
+            <p>Click the Gear to the top left to change settings</p>
+        </div>
+        <div class="progress">
+            <div class="mask" id="prog"></div>
+        </div>
+        <div id="notification"><i class="ion-ios-alarm-outline"></i>
+            <h1>Hold on!</h1>
+            <p>Did you set the session & break information?</p>
+            <div class="ion-ios-close-empty close" id="n-close"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
